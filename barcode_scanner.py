@@ -25,3 +25,4 @@ def waitForBarCode():
    bar_code = next(string)
    bar_code = utfToAscii(bar_code)
    return bar_code
+   #test comment
