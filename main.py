@@ -6,12 +6,13 @@ import barcode_scanner as scanner
 import db_handler as db
 import motor_handler as motor
 lcd = LCD()
-      
+lcd.text ("WELCOME TO NEC", 1)
+lcd.text ("Scan Your Card", 2)
 
 while True:
    sleep(0.1)
    if db.checkdRecords(scanner.waitForBarCode()):
-      print('Roll is in the database')
+      lcd.text('Roll is in the database')
       count = db.getCount()
       print('Count is : ',count)
       if count >25:

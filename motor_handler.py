@@ -57,5 +57,3 @@ def stepper1():
       sleep(delay)
       GPIO.output(STEP1, GPIO.LOW)
       sleep(delay)
-      
-#test change
