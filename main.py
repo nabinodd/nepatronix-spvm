@@ -15,6 +15,7 @@ while True:
       lcd.text('Roll is in the database')
       count = db.getCount()
       print('Count is : ',count)
+      lcd.text ("Availabe pad",count)
       if count >25:
          print('Run from one')
          motor.stepper1()
